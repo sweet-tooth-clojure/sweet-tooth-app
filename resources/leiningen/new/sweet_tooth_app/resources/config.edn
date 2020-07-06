@@ -1,0 +1,47 @@
+{:duct.profile/base
+ {:duct.core/project-ns  minimal
+  :duct.core/environment :production
+
+  ;;-----------
+  ;; middleware
+  ;;-----------
+
+  :duct.middleware.web/defaults
+  {:static {:resources "public"}}
+
+  :sweet-tooth.endpoint.middleware/format-exception
+  {:include-data false}
+
+  :duct.server.http/jetty
+  {:port #duct/env ["HTTP_SERVER_PORT" Int :or 3000]}
+
+  ;; logging
+  :duct.logger/timbre
+  {:level     :info
+   :appenders {:duct.logger.timbre/println #ig/ref :duct.logger.timbre/println}}
+
+  :duct.logger.timbre/println {}}
+ ;; end base profile
+ ;;-----------------
+
+ ;;---------
+ ;; profiles
+ ;;---------
+ :duct.profile/local #duct/include "local.edn"
+ :duct.profile/dev   #duct/include "dev.edn"
+ :duct.profile/test  #duct/include "test.edn"
+
+ :duct.profile/prod
+ {:duct.core/environment :production}
+
+ ;;--------
+ ;; modules
+ ;;--------
+
+ :duct.module/logging {}
+ :duct.module.web/api {}
+
+ :sweet-tooth.endpoint.module/liberator-reitit-router
+ {:routes minimal.cross.endpoint-routes/routes}
+
+ :sweet-tooth.endpoint.module/middleware {}}
