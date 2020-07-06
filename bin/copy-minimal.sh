@@ -6,8 +6,7 @@ rm -rf resources/leiningen/new/sweet_tooth_app
 cp -r ../minimal resources/leiningen/new/sweet_tooth_app
 cd resources/leiningen/new/sweet_tooth_app
 
-rm package-lock.json
-rm -rf .git
+rm -rf node_modules .git frontend-target package-lock.json
 mv src/{minimal,app}
 
 sed -i "" 's/sweet-tooth\/minimal/{{name}}/' project.clj
