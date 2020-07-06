@@ -12,6 +12,8 @@
               :sanitized (name-to-path name)}]
     (main/info "Generating fresh 'lein new' sweet-tooth-app project.")
     (->files data
+             #_st:files
+             [".gitignore" (render ".gitignore" data)]
              ["bin/build.sh" (render "bin/build.sh" data)]
              ["deps.edn" (render "deps.edn" data)]
              ["dev/resources/dev.edn" (render "dev/resources/dev.edn" data)]
