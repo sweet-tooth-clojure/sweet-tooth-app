@@ -1,5 +1,5 @@
 {:duct.profile/base
- {:duct.core/project-ns  minimal
+ {:duct.core/project-ns  {{ns}}
   :duct.core/environment :production
 
   ;;-----------
@@ -42,6 +42,6 @@
  :duct.module.web/api {}
 
  :sweet-tooth.endpoint.module/liberator-reitit-router
- {:routes minimal.cross.endpoint-routes/routes}
+ {:routes {{ns}}.cross.endpoint-routes/routes}
 
  :sweet-tooth.endpoint.module/middleware {}}

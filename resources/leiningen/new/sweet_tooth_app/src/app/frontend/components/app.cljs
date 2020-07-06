@@ -1,4 +1,4 @@
-(ns minimal.frontend.components.app
+(ns {{ns}}.frontend.components.app
   (:require [re-frame.core :as rf]
             [sweet-tooth.frontend.routes :as stfr]
             [sweet-tooth.frontend.nav.flow :as stnf]))

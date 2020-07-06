@@ -1,4 +1,4 @@
-(ns minimal.frontend.components.home)
+(ns {{ns}}.frontend.components.home)
 
 (defn component
   []

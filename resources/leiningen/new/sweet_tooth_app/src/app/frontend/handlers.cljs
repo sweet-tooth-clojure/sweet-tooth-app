@@ -1,2 +1,2 @@
-(ns minimal.frontend.handlers
+(ns {{ns}}.frontend.handlers
   (:require [re-frame.core :as rf]))

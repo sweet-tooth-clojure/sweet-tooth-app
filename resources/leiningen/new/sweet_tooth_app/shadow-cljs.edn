@@ -9,13 +9,13 @@
            :compiler-options {:closure-defines {"re_frame.trace.trace_enabled_QMARK_" true}}
 
            :modules
-           {:main {:entries [minimal.frontend.core]}}
+           {:main {:entries [{{ns}}.frontend.core]}}
 
            ;; start a development http server on http://localhost:3000
            :devtools
            {:preloads    [day8.re-frame-10x.preload]
-            :before-load minimal.frontend.core/stop
-            :after-load  minimal.frontend.core/-main}}
+            :before-load {{ns}}.frontend.core/stop
+            :after-load  {{ns}}.frontend.core/-main}}
 
           :test
           {:target     :browser
@@ -23,7 +23,7 @@
            :asset-path "/js"
 
            :modules
-           {:main {:entries [minimal.frontend.core]}}}
+           {:main {:entries [{{ns}}.frontend.core]}}}
 
           :staging
           {:target     :browser
@@ -32,7 +32,7 @@
            :compiler-options {:optimizations :advanced}
 
            :modules
-           {:main {:entries [minimal.frontend.core]}}}
+           {:main {:entries [{{ns}}.frontend.core]}}}
 
           :prod
           {:target     :browser
@@ -41,5 +41,5 @@
            :compiler-options {:optimizations :advanced}
 
            :modules
-           {:main {:entries [minimal.frontend.core]}}}}
+           {:main {:entries [{{ns}}.frontend.core]}}}}
  :nrepl {:middleware [refactor-nrepl.middleware/wrap-refactor]}}

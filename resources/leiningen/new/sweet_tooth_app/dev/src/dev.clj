@@ -7,7 +7,7 @@
             [duct.core :as duct]
             [duct.core.repl :as duct-repl]
 
-            [minimal.backend.duct :as app-duct] ;; for multimethod definitions
+            [{{ns}}.backend.duct :as app-duct] ;; for multimethod definitions
 
             [integrant.core :as ig]
             [integrant.repl :as irp :refer [clear halt init reset]]

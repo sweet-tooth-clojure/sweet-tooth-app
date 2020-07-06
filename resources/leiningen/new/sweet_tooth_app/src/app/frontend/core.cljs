@@ -1,4 +1,4 @@
-(ns minimal.frontend.core
+(ns {{ns}}.frontend.core
   (:require [reagent.dom :as rdom]
             [re-frame.core :as rf]
             [re-frame.db :as rfdb]
@@ -13,11 +13,11 @@
             [sweet-tooth.frontend.routes :as stfr]
             [sweet-tooth.frontend.js-event-handlers.flow :as stjehf]
 
-            [minimal.frontend.components.app :as app]
-            [minimal.frontend.handlers] ;; for side effects
-            [minimal.frontend.routes :as froutes]
-            [minimal.frontend.subs] ;; for side effects
-            [minimal.cross.endpoint-routes :as eroutes]))
+            [{{ns}}.frontend.components.app :as app]
+            [{{ns}}.frontend.handlers] ;; for side effects
+            [{{ns}}.frontend.routes :as froutes]
+            [{{ns}}.frontend.subs] ;; for side effects
+            [{{ns}}.cross.endpoint-routes :as eroutes]))
 
 (enable-console-print!)
 

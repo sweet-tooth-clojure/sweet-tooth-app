@@ -1,4 +1,4 @@
-(ns minimal.backend.duct
+(ns {{ns}}.backend.duct
   (:require [clojure.java.io :as io]
             [duct.core :as duct]
             [sweet-tooth.endpoint.system :as es]))

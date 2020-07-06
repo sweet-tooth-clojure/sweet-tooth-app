@@ -1,8 +1,8 @@
-(ns minimal.backend.main
+(ns {{ns}}.backend.main
   (:gen-class)
   (:require [duct.core :as duct]
             [integrant.core :as ig]
-            [minimal.backend.duct]
+            [{{ns}}.backend.duct]
             [taoensso.timbre :as log]
             [sweet-tooth.endpoint.system :as es]))
 

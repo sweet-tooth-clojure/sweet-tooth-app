@@ -1,2 +1,2 @@
-(ns minimal.frontend.subs
+(ns {{ns}}.frontend.subs
   (:require [re-frame.core :as rf]))

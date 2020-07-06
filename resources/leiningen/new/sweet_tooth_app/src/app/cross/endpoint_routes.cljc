@@ -1,4 +1,4 @@
-(ns minimal.cross.endpoint-routes
+(ns {{ns}}.cross.endpoint-routes
   (:require [sweet-tooth.endpoint.routes.reitit :as serr]
             [integrant.core :as ig]))
 
