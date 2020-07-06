@@ -1,4 +1,4 @@
-(defproject sweet-tooth/{{ns}} "0.1.0-SNAPSHOT"
+(defproject {{name}} "0.1.0-SNAPSHOT"
   :description "bare starting point for new app"
   :min-lein-version "2.0.0"
 
