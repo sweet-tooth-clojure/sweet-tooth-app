@@ -1,10 +1,17 @@
 # sweet-tooth-app
 
-A Leiningen template for a minimal sweet tooth app.
+A Leiningen template for a minimal [Sweet Tooth](http://sweettooth.dev) app.
 
 ## Usage
 
+``` shell
+lein new sweet-tooth-app your.app/name
+```
+
 ## Dev
+
+Template files are derived from the [minimal Sweet Tooth app
+repo](https://github.com/sweet-tooth-clojure/minimal).
 
 Copy over minimal project:
 
@@ -18,6 +25,7 @@ In REPL, eval `dev` ns and generate the file list for the lein template:
 (g/generate :sweet-tooth/app-template)
 ```
 
+(TODO: make this a lein command)
 
 ## License
 
