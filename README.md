@@ -13,19 +13,11 @@ lein new sweet-tooth-app your.app/name
 Template files are derived from the [minimal Sweet Tooth app
 repo](https://github.com/sweet-tooth-clojure/minimal).
 
-Copy over minimal project:
+Update this template from that project:
 
 ```
-./bin/copy-minimal.sh
+./bin/update.sh
 ```
-
-In REPL, eval `dev` ns and generate the file list for the lein template:
-
-```clojure
-(g/generate :sweet-tooth/app-template)
-```
-
-(TODO: make this a lein command)
 
 ## License
 
