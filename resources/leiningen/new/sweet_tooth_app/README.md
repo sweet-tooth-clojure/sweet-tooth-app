@@ -1,10 +1,18 @@
 # A Sweet Tooth App
 
-## Install Deps
+## Setup
+
+### Install Deps
 
 ``` shell
 npm install -g shadow-cljs
 npm install
+```
+
+### Permissions
+
+``` shell
+chmod +x ./bin/*
 ```
 
 ## Building & Running
