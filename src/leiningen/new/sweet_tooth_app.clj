@@ -27,6 +27,7 @@
              ["project.clj" (render "project.clj" data)]
              ["resources/config.edn" (render "resources/config.edn" data)]
              ["resources/public/index.html" (render "resources/public/index.html" data)]
+             ["resources/public/stylesheets/main.css" (render "resources/public/stylesheets/main.css" data)]
              ["shadow-cljs.edn" (render "shadow-cljs.edn" data)]
              ["src/{{sanitized}}/backend/duct.clj" (render "src/app/backend/duct.clj" data)]
              ["src/{{sanitized}}/backend/main.clj" (render "src/app/backend/main.clj" data)]
