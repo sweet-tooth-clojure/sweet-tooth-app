@@ -4,7 +4,7 @@
          com.cognitect/transit-cljs {:mvn/version "0.8.243"}
          com.taoensso/timbre        {:mvn/version "4.10.0"}
          sweet-tooth/describe       {:mvn/version "0.3.0"}
-         sweet-tooth/endpoint       {:mvn/version "0.10.7-SNAPSHOT"}}
+         sweet-tooth/endpoint       {:mvn/version "0.10.8"}}
 
  :aliases
  {:dev        {:extra-deps {cider/cider-nrepl {:mvn/version "0.21.0"}
