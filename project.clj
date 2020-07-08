@@ -1,4 +1,4 @@
-(defproject sweet-tooth-app/lein-template "0.1.5"
+(defproject sweet-tooth-app/lein-template "0.1.6"
   :description "generate a new sweet tooth app"
   :url "http://sweettooth.dev"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
