@@ -8,6 +8,6 @@
   [:div.app
    [:div.head
     [:div.container
-     [:nav [:a {:href (stfr/path :home)} "Home"]]]]
+     [:a {:href (stfr/path :home)} "Home"]]]
    [:div.container
     [:div.main @(rf/subscribe [::stnf/routed-component :main])]]])

@@ -18,8 +18,7 @@
                             test2junit                 {:mvn/version "1.4.2"}}}
   :backend    {:extra-deps {bk/ring-gzip         {:mvn/version "0.3.0"}
                             ring                 {:mvn/version "1.7.1"
-                                                  :exclusions  [org.clojure/tools.namespace]}
-                            sweet-tooth/generate {:mvn/version "0.1.1"}}}
+                                                  :exclusions  [org.clojure/tools.namespace]}}}
   :cljs       {:extra-deps {re-frame             {:mvn/version "0.10.6"}
                             reagent              {:mvn/version "0.10.0"}
                             thheller/shadow-cljs {:mvn/version "2.8.60"}
